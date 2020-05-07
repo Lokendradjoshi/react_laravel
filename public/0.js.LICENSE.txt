@@ -1,0 +1,5 @@
+/**
+  * ree-validate v2.0.3
+  * (c) 2018 Moeen Basra
+  * @license MIT
+  */
