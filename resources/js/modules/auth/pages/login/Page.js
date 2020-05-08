@@ -117,7 +117,8 @@ class Page extends Component {
       handleSubmit: this.handleSubmit,
     }
 
-    return (<div className="container py-5">
+    return (
+    <div className="container py-5">
       <div className="row">
         <div className="col-md-12">
           <div className="row">
