@@ -8,7 +8,7 @@ import { login } from '../../service'
 import ReeValidate from 'ree-validate'
 
 // import components
-import Form from './components/Form'
+ import Form from './components/Form'
 
 // initialize component
 class Page extends Component {
@@ -117,23 +117,39 @@ class Page extends Component {
       handleSubmit: this.handleSubmit,
     }
 
+    // return (
+    // <div className="container py-5">
+    //   <div className="row">
+    //     <div className="col-md-12">
+    //       <div className="row">
+    //         <div className="mx-auto">
+    //           <span className="anchor"/>
+    //           <div className="card has-shadow">
+    //             <div className="card-body">
+    //               <Form {...props} />
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>)
+
     return (
-    <div className="container py-5">
-      <div className="row">
-        <div className="col-md-12">
-          <div className="row">
-            <div className="mx-auto">
-              <span className="anchor"/>
-              <div className="card has-shadow">
-                <div className="card-body">
-                  <Form {...props} />
-                </div>
+
+      <div className="content-auth">
+        <div className="container-fluid">
+          <div className="media align-items-stretch justify-content-center ht-100p pos-relative">
+            <div className="media-body align-items-center d-none d-lg-flex">
+              <div>
+                <img src="images/login/login.jpg" className="img-fluid" alt="" />
               </div>
-            </div>
-          </div>
-        </div>
+            </div>{/* media-body */}
+            <Form {...props} />
+          </div>{/* media */}
+        </div>{/* container */}
       </div>
-    </div>)
+    );
   }
 }
 

@@ -113,22 +113,87 @@ class Page extends Component {
       handleSubmit: this.handleSubmit,
     }
     
-    return (<div className="container py-5">
-      <div className="row">
-        <div className="col-md-12">
-          <div className="row">
-            <div className="mx-auto">
-              <span className="anchor"/>
-              <div className="card has-shadow">
-                <div className="card-body">
-                  <Form {...props}  />
-                </div>
-              </div>
-            </div>
+    // return (
+    // <div className="container py-5">
+    //   <div className="row">
+    //     <div className="col-md-12">
+    //       <div className="row">
+    //         <div className="mx-auto">
+    //           <span className="anchor"/>
+    //           <div className="card has-shadow">
+    //             <div className="card-body">
+    //               <Form {...props}  />
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    // )
+   
+      
+        return (
+    
+          <div className="content-auth">
+            <div className="container-fluid">
+              <div className="media align-items-stretch justify-content-center ht-100p pos-relative">
+                <div className="media-body align-items-center d-none d-lg-flex">
+                  <div>
+                    <img src="images/register/register.jpg" className="img-fluid" alt="" />
+                  </div>
+                </div>{/* media-body */}
+                <div className="sign-wrapper mg-lg-l-50 mg-lg-r-50 mg-xl-l-60 mg-xl-r-60">
+                  <div className="wd-100p">
+                    <img width={130} src="images/login_register_logo.shipgrade.png" className="img-fluid mg-b-30 mg-t-30" alt="" />
+                    {/*<h3 class="tx-color-01 mg-b-5">Create your account</h3>
+                  <p class="tx-color-03 tx-16 mg-b-40">No upfront fees. No minimums. Get started for free.</p>*/}
+                    <div className="form-row">
+                      <div className="form-group col-md-6">
+                        <label>Firstname</label>
+                        <input type="text" className="form-control" placeholder="Enter your firstname" />
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Lastname</label>
+                        <input type="text" className="form-control" placeholder="Enter your lastname" />
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <label>Email address</label>
+                      <input type="email" className="form-control" placeholder="Enter your email address" />
+                    </div>
+                    <div className="form-group">
+                      <label>Company Name</label>
+                      <input type="text" className="form-control" placeholder="Enter your company name" />
+                    </div>
+                    <div className="form-group">
+                      <div className="d-flex justify-content-between mg-b-5">
+                        <label className="mg-b-0-f">Password</label>
+                      </div>
+                      <input type="password" className="form-control" placeholder="Enter your password" />
+                    </div>
+                    <div className="input-group mg-b-30">
+                      <div className="input-group-prepend">
+                        <span className="input-group-text">India (+91)</span>
+                      </div>
+                      <input id="inputPhoneNumber" type="text" className="form-control" placeholder="Enter phone number" />
+                    </div>
+                    <div className="form-group tx-12">
+                      By clicking <strong>Create an account</strong> below, you agree to our terms of service and privacy statement.
+                    </div>{/* form-group */}
+                    <button className="btn btn-brand-02 btn-block">Create Account</button>
+                    <div className="divider-text">or</div>
+                    <button className="btn btn-outline-facebook btn-block">Sign Up With Facebook</button>
+                    <button className="btn btn-outline-twitter btn-block">Sign Up With Twitter</button>
+                    <div className="tx-13 mg-t-20 tx-center">Already have an account? <a href="page-signin.html">Sign In</a></div>
+                  </div>
+                </div>{/* sign-wrapper */}
+              </div>{/* media */}
+            </div>{/* container */}
           </div>
-        </div>
-      </div>
-    </div>)
+        );
+      
+  
   }
 }
 
